@@ -44,7 +44,7 @@ var Manager = function(conf) {
   this.currency = conf.currency;
   this.asset = conf.asset;
   this.keepAsset = 0;
-  this.keepCurrency = 1;
+  this.keepCurrency = 0;
 
   if(_.isNumber(conf.keepAsset)) {
     log.debug('Keep asset is active. Will try to keep at least ' + conf.keepAsset + ' ' + conf.asset);
